@@ -10,7 +10,6 @@ gem "kramdown-parser-gfm" if ENV["JEKYLL_VERSION"] == "~> 3.9"
 group :jekyll_plugins do
 #   gem "jekyll-paginate", "~> 1.1.0"
 #   gem "jekyll-redirect-from", "~> 0.16.0"
-    gem "jekyll-mermaid"
 end
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and

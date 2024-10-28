@@ -75,7 +75,7 @@ Logisim-Evolution screenshot (remote image, external source):
 
 ---
 
-{% mermaid %}
+<div class="mermaid">
   gantt
     title Windows Timeline
     dateFormat YYYY
@@ -87,7 +87,7 @@ Logisim-Evolution screenshot (remote image, external source):
       Windows NT 4.0      :1996, 8y
       Windows 2000        :2000, 10y
       Windows XP          :2001, 13y
-{% endmermaid %}
+</div>
 
 ---
 

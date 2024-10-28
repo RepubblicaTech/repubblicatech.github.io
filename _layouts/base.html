@@ -15,9 +15,14 @@
 
     {%- include footer.html -%}
 
+    <script type="text/javascript"
+      src="https://unpkg.com/mermaid@11.3.0/dist/mermaid.min.js">
+    </script>
     <script>
-      mermaid.initialize({
-        theme: 'dark',
+      $(document).ready(function() {
+          mermaid.initialize({
+              theme: 'dark'
+          });
       });
     </script>
   </body>
