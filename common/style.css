@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    background: #003b0a;
+    background: linear-gradient(rgba(13, 12, 0, 1), rgb(0, 34, 6) 100%);
+
+    color: white;
+
+    min-height: 100vh;
+
+    font-family: Inter;
+}
+
+body div.content {
+    margin: 30px;
+}
+
+body h1 {
+    font-weight: bold;
+    font-size: 2.5rem;
+
+    margin: 20px 0;
+}
