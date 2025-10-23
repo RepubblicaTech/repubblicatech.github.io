@@ -1,5 +1,3 @@
-# My Github Pages website :^)
+# RepubblicaTech's Pages (2)
 
-Just my website, nothing much
-
-(it's like the third time remaking it cuz jekyll decided to screw itself up while updating)
+it's the fourth time I've been making a Github Pages webste ☠️☠️☠️
