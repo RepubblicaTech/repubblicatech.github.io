@@ -1,5 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
+:root[data-theme="light"] {
+  --text: #010f00;
+  --background: #f5fff5;
+  --primary: #abff1a;
+  --secondary: #e77aeb;
+  --accent: #1bd80e;
+}
+
+:root[data-theme="dark"] {
+  --text: #f1fff0;
+  --background: #000a00;
+  --primary: #91e600;
+  --secondary: #811485;
+  --accent: #35f127;
+}
+
+
 body {
     font-family: "Crimson Pro";
 }
