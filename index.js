@@ -12,7 +12,7 @@ async function setHTML(element, filePath) {
 async function injectHTML(event) {
   const path = event?.target?.attributes.getNamedItem("href")?.value;
   const contentDiv = document.getElementById("content");
-  console.log(path);
+  console.debug(path);
   setHTML(contentDiv, path);
 }
 
@@ -23,7 +23,7 @@ async function switchTheme() {
 
   htmlVariables.setAttribute("data-theme", currentTheme == "dark" ? "light" : "dark");
   currentTheme = htmlVariables.getAttribute("data-theme");
-  console.log(currentTheme);
+  console.debug("Setting theme ", currentTheme);
   switch (currentTheme) {
     case "dark":
       switcherButton.setAttribute("src", "/assets/sun-svgrepo-com.png");
