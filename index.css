@@ -17,8 +17,14 @@ body {
     color: var(--text);
 }
 
-#heading {
+#header {
     margin: 10px;
+}
+
+#header > img {
+    height: 40px;
+    margin-right: 5px;
+    float: left;
 }
 
 #website {
