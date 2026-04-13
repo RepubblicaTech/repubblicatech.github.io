@@ -19,12 +19,31 @@ body {
 
 #header {
     margin: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-#header > img {
+#header > #icon {
     height: 40px;
     margin-right: 5px;
-    float: left;
+}
+
+/* default behaviour */
+#switcher {
+    margin: 5px;
+    padding: 5px;
+}
+
+/* additional settings for images */
+img#switcher {
+    height: 20px;
+}
+
+#switcher:hover {
+    cursor: pointer;
+    background-color: var(--accent);
 }
 
 #website {
@@ -45,12 +64,12 @@ body {
 
 #section_links > span {
     color: var(--text);
-    padding: 5px;
+    padding: 4px;
+    margin: 2px;
 }
 
 #section_links > span:hover {
     cursor: pointer;
-
     background-color: var(--accent);
 }
 

@@ -16,20 +16,26 @@ async function injectHTML(event) {
   setHTML(contentDiv, path);
 }
 
-function switchTheme() {
+async function switchTheme() {
   const htmlVariables = document.documentElement;
-  const currentTheme = htmlVariables.getAttribute("data-theme");
+  currentTheme = htmlVariables.getAttribute("data-theme");
+  const switcherButton = document.getElementById("switcher");
+
   htmlVariables.setAttribute("data-theme", currentTheme == "dark" ? "light" : "dark");
+  currentTheme = htmlVariables.getAttribute("data-theme");
+  console.log(currentTheme);
+  switch (currentTheme) {
+    case "dark":
+      switcherButton.setAttribute("src", "/assets/sun-svgrepo-com.png");
+      break;
+    case "light":
+      switcherButton.setAttribute("src", "/assets/moon-svgrepo-com.png");
+      break;
+    default:
+      console.warn("huh?");
+      break;
+  }
 }
-
-// Source - https://stackoverflow.com/a/57795495
-// Posted by Mark Szabo, modified by community. See post 'Timeline' for change history
-// Retrieved 2026-04-13, License - CC BY-SA 4.0
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-  const newColorScheme = event.matches ? "dark" : "light";
-  document.documentElement.setAttribute("data-theme", newColorScheme);
-});
-
 
 window.onload = (event) => {
   console.log('Hello!\n');
