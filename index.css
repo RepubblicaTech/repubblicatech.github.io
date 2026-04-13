@@ -43,20 +43,20 @@ body {
     flex-direction: row;
 }
 
+#section_links > span {
+    color: var(--text);
+    padding: 5px;
+}
+
+#section_links > span:hover {
+    cursor: pointer;
+
+    background-color: var(--accent);
+}
+
 #content {
     height: 100%;
     flex-grow: 6;
 
     margin-left: 20px;
-}
-
-.section {
-    color: var(--text);
-    padding: 5px;
-}
-
-.section:hover {
-    cursor: pointer;
-
-    background-color: var(--accent);
 }
